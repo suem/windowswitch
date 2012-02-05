@@ -9,7 +9,7 @@ To use this script you will need the following packages installed on your system
 
 The script is currently just a hack and works on my debian system. Use the following command to install the required packages:
 
-	sudo apt-get ruby install dmenu wmctrl xdotool
+	sudo apt-get install ruby dmenu wmctrl xdotool
 
 Use the following command to run the script: 
 	ruby windowswitch/windowswitch.rb

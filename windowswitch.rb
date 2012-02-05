@@ -111,7 +111,7 @@ class Dmenu
 		result = nil
 		dmenu_command = ["dmenu"]
 		dmenu_command.concat(ARGV)
-
+		
 		IO.popen(dmenu_command.join(" "), "r+") do |f|
 		  f.puts(windows)
 		  f.close_write
