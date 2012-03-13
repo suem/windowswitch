@@ -11,6 +11,10 @@ def get_user_selection(windows, message)
   IO.popen(dmenu_command.join(" "), "r+") do |f|
     f.puts(windows)
     f.close_write
+    
+    system("xdotool key Down")
+    system("xdotool key Up")
+    
     result = f.gets
   end
   result
