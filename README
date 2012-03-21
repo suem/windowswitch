@@ -14,5 +14,7 @@ The script is currently just a hack and works on my debian system. Use the follo
 Use the following command to run the script: 
 	ruby windowswitch/windowswitch.rb
 
+You need create file ~/.cache/window_history.
+
 To change between application windows, I've used wmctrl. Check out their website for a list of supported window managers (http://tomas.styblo.name/wmctrl/)
 
