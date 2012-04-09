@@ -55,7 +55,7 @@ def select_file(basedir, previous = nil)
     if user_selection == "./"
       save_previous(basedir)
       open_file(basedir)
-    elsif previous != nil && user_selection == previous
+    elsif previous != nil && user_selection.chomp == previous
       select_file(previous)
     elsif user_selection.end_with?("/")
       save_previous(basedir)
